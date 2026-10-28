@@ -1,0 +1,12 @@
+[gd_scene format=3 uid="uid://cr3fb2oumjgcl"]
+
+[ext_resource type="Texture2D" uid="uid://cj6rtf5octjx" path="res://sprites/RemoraGreaseTest.png" id="1_ryjsw"]
+
+[node name="Node3D" type="Node3D" unique_id=1701608907]
+
+[node name="Camera3D" type="Camera3D" parent="." unique_id=1157739642]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 7.0212674)
+current = true
+
+[node name="Sprite3D" type="Sprite3D" parent="." unique_id=629824385]
+texture = ExtResource("1_ryjsw")

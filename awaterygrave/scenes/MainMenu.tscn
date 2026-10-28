@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://d22bctbca4qa0"]
+
+[ext_resource type="Texture2D" uid="uid://bunm7hk71oggw" path="res://ui/AWGLogoMockup.png" id="1_0ykhv"]
+[ext_resource type="Texture2D" uid="uid://0b15extwvpka" path="res://ui/WitHourMockup.png" id="1_yqorp"]
+
+[node name="MainMenu" type="Node2D" unique_id=655593099]
+
+[node name="AspectRatioContainer" type="AspectRatioContainer" parent="." unique_id=4585646]
+offset_left = 3.0
+offset_right = 43.0
+offset_bottom = 40.0
+alignment_horizontal = 0
+alignment_vertical = 0
+
+[node name="AwgLogoMockup" type="Sprite2D" parent="." unique_id=2145190630]
+position = Vector2(213.18768, 183)
+scale = Vector2(0.068058446, 0.068058446)
+texture = ExtResource("1_0ykhv")
+
+[node name="WitHourMockup" type="Sprite2D" parent="." unique_id=925224221]
+position = Vector2(114.95095, 1002.5)
+scale = Vector2(0.08887615, 0.088876165)
+texture = ExtResource("1_yqorp")
