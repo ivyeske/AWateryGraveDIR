@@ -2,6 +2,15 @@
 
 [ext_resource type="Texture2D" uid="uid://bunm7hk71oggw" path="res://ui/AWGLogoMockup.png" id="1_0ykhv"]
 [ext_resource type="Texture2D" uid="uid://0b15extwvpka" path="res://ui/WitHourMockup.png" id="1_yqorp"]
+[ext_resource type="FontFile" uid="uid://dhuqcw3stv77f" path="res://ui/superior-title-light.otf" id="3_2wh52"]
+
+[sub_resource type="Theme" id="Theme_fk26o"]
+default_font = ExtResource("3_2wh52")
+default_font_size = 0
+
+[sub_resource type="LabelSettings" id="LabelSettings_5doc4"]
+font = ExtResource("3_2wh52")
+font_size = 26
 
 [node name="MainMenu" type="Node2D" unique_id=655593099]
 
@@ -21,3 +30,12 @@ texture = ExtResource("1_0ykhv")
 position = Vector2(114.95095, 1002.5)
 scale = Vector2(0.08887615, 0.088876165)
 texture = ExtResource("1_yqorp")
+
+[node name="Label" type="Label" parent="." unique_id=433654076]
+offset_left = 1809.0
+offset_top = 1036.0
+offset_right = 1904.0
+offset_bottom = 1069.0
+theme = SubResource("Theme_fk26o")
+text = "Ver. 0.0.0"
+label_settings = SubResource("LabelSettings_5doc4")
