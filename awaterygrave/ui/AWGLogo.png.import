@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bunm7hk71oggw"
-path="res://.godot/imported/AWGLogoMockup.png-55f7b2e155d95887628ec17d0a44cec7.ctex"
+uid="uid://b6rd48eapoqm2"
+path="res://.godot/imported/AWGLogo.png-4bc53f9015c620400b3b0ca1975042bf.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://ui/AWGLogoMockup.png"
-dest_files=["res://.godot/imported/AWGLogoMockup.png-55f7b2e155d95887628ec17d0a44cec7.ctex"]
+source_file="res://ui/AWGLogo.png"
+dest_files=["res://.godot/imported/AWGLogo.png-4bc53f9015c620400b3b0ca1975042bf.ctex"]
 
 [params]
 

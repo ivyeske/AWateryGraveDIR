@@ -1,8 +1,13 @@
 [gd_scene format=3 uid="uid://d22bctbca4qa0"]
 
-[ext_resource type="Texture2D" uid="uid://bunm7hk71oggw" path="res://ui/AWGLogoMockup.png" id="1_0ykhv"]
-[ext_resource type="Texture2D" uid="uid://0b15extwvpka" path="res://ui/WitHourMockup.png" id="1_yqorp"]
+[ext_resource type="Texture2D" uid="uid://b6rd48eapoqm2" path="res://ui/AWGLogo.png" id="1_2wh52"]
+[ext_resource type="Texture2D" uid="uid://bcgmbgj0vmli7" path="res://ui/WitchingHourLogo.png" id="2_ow34m"]
 [ext_resource type="FontFile" uid="uid://dhuqcw3stv77f" path="res://ui/superior-title-light.otf" id="3_2wh52"]
+[ext_resource type="Texture2D" uid="uid://dayv6jbyaj1vl" path="res://env/MainMenu/MainMenu_BG.png" id="4_ucygd"]
+[ext_resource type="Texture2D" uid="uid://ceevfu3ngx1ut" path="res://env/MainMenu/MainMenu_SP1.png" id="5_mipys"]
+[ext_resource type="Texture2D" uid="uid://qsy354fyn5at" path="res://env/MainMenu/MainMenu_SP2.png" id="6_8a8k8"]
+[ext_resource type="Texture2D" uid="uid://boagepd3tbvjw" path="res://env/MainMenu/MainMenu_LightRay.png" id="7_7la6k"]
+[ext_resource type="Texture2D" uid="uid://qrjfk2kdpkvh" path="res://env/MainMenu/MainMenu_TextDropShadow.png" id="8_mipys"]
 
 [sub_resource type="Theme" id="Theme_fk26o"]
 default_font = ExtResource("3_2wh52")
@@ -11,6 +16,8 @@ default_font_size = 0
 [sub_resource type="LabelSettings" id="LabelSettings_5doc4"]
 font = ExtResource("3_2wh52")
 font_size = 26
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_bbhbs"]
 
 [node name="MainMenu" type="Node2D" unique_id=655593099]
 
@@ -22,14 +29,16 @@ alignment_horizontal = 0
 alignment_vertical = 0
 
 [node name="AwgLogoMockup" type="Sprite2D" parent="." unique_id=2145190630]
-position = Vector2(213.18768, 183)
+z_index = 3
+position = Vector2(960, 183)
 scale = Vector2(0.068058446, 0.068058446)
-texture = ExtResource("1_0ykhv")
+texture = ExtResource("1_2wh52")
 
 [node name="WitHourMockup" type="Sprite2D" parent="." unique_id=925224221]
-position = Vector2(114.95095, 1002.5)
-scale = Vector2(0.08887615, 0.088876165)
-texture = ExtResource("1_yqorp")
+z_index = 3
+position = Vector2(160.46509, 959.99994)
+scale = Vector2(0.10321102, 0.103211045)
+texture = ExtResource("2_ow34m")
 
 [node name="Label" type="Label" parent="." unique_id=433654076]
 offset_left = 1809.0
@@ -39,3 +48,29 @@ offset_bottom = 1069.0
 theme = SubResource("Theme_fk26o")
 text = "Ver. 0.0.0"
 label_settings = SubResource("LabelSettings_5doc4")
+
+[node name="MainMenuBg" type="Sprite2D" parent="." unique_id=1684688167]
+position = Vector2(960, 540)
+texture = ExtResource("4_ucygd")
+
+[node name="MainMenuSp1" type="Sprite2D" parent="." unique_id=226095523]
+z_index = 2
+position = Vector2(456, 661)
+texture = ExtResource("5_mipys")
+
+[node name="MainMenuSp2" type="Sprite2D" parent="." unique_id=1996122568]
+z_index = 2
+position = Vector2(1414, 790)
+texture = ExtResource("6_8a8k8")
+
+[node name="MainMenuLightRay" type="Sprite2D" parent="." unique_id=402477584]
+visible = false
+z_index = 1
+material = SubResource("CanvasItemMaterial_bbhbs")
+position = Vector2(1386, 541)
+texture = ExtResource("7_7la6k")
+
+[node name="MainMenuTextDropShadow" type="Sprite2D" parent="." unique_id=1419110569]
+z_index = 2
+position = Vector2(962, 508)
+texture = ExtResource("8_mipys")

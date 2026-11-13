@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://0b15extwvpka"
-path="res://.godot/imported/WitHourMockup.png-92b8d83550b5f472bf0a355bbe620f43.ctex"
+uid="uid://bcgmbgj0vmli7"
+path="res://.godot/imported/WitchingHourLogo.png-12101a3d30beabac298f2d699a2fc106.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://ui/WitHourMockup.png"
-dest_files=["res://.godot/imported/WitHourMockup.png-92b8d83550b5f472bf0a355bbe620f43.ctex"]
+source_file="res://ui/WitchingHourLogo.png"
+dest_files=["res://.godot/imported/WitchingHourLogo.png-12101a3d30beabac298f2d699a2fc106.ctex"]
 
 [params]
 
