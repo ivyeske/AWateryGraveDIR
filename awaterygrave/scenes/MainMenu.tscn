@@ -197,17 +197,17 @@ animation = &"MenuSelection_Droplet"
 frame = 5
 
 [node name="MainMenuLightRay2" type="Sprite2D" parent="." unique_id=1198917418]
-modulate = Color(0.3515629, 0.3515629, 0.35156286, 1)
+modulate = Color(1, 1, 1, 0.26666668)
 material = SubResource("CanvasItemMaterial_fk26o")
-position = Vector2(1339.9114, 548.7437)
-rotation = -0.1501088
+position = Vector2(1307.4965, 458.1665)
+rotation = -0.24751917
 scale = Vector2(1.1581808, 1.2145456)
 texture = ExtResource("7_7la6k")
 
 [node name="MainMenuLightRay3" type="Sprite2D" parent="." unique_id=2094949198]
-modulate = Color(0.3515629, 0.3515629, 0.35156286, 1)
+modulate = Color(1, 1, 1, 0.27450982)
 material = SubResource("CanvasItemMaterial_fk26o")
-position = Vector2(1718.1141, 304.74127)
-rotation = -0.6050215
+position = Vector2(1685.6992, 214.16406)
+rotation = -0.7024318
 scale = Vector2(1.1131408, 1.4070089)
 texture = ExtResource("7_7la6k")
