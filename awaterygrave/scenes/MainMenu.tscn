@@ -8,6 +8,7 @@
 [ext_resource type="Texture2D" uid="uid://qsy354fyn5at" path="res://env/MainMenu/MainMenu_SP2.png" id="6_8a8k8"]
 [ext_resource type="Texture2D" uid="uid://boagepd3tbvjw" path="res://env/MainMenu/MainMenu_LightRay.png" id="7_7la6k"]
 [ext_resource type="Texture2D" uid="uid://qrjfk2kdpkvh" path="res://env/MainMenu/MainMenu_TextDropShadow.png" id="8_mipys"]
+[ext_resource type="Texture2D" uid="uid://bb43msdkmh1cc" path="res://ui/Menu_Selection.png" id="9_8a8k8"]
 
 [sub_resource type="Theme" id="Theme_fk26o"]
 default_font = ExtResource("3_2wh52")
@@ -18,6 +19,109 @@ font = ExtResource("3_2wh52")
 font_size = 26
 
 [sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_bbhbs"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7la6k"]
+atlas = ExtResource("9_8a8k8")
+region = Rect2(145, 240, 12, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2nypq"]
+atlas = ExtResource("9_8a8k8")
+region = Rect2(145, 192, 12, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bky6r"]
+atlas = ExtResource("9_8a8k8")
+region = Rect2(145, 144, 12, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_l4mxc"]
+atlas = ExtResource("9_8a8k8")
+region = Rect2(145, 96, 12, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5faoh"]
+atlas = ExtResource("9_8a8k8")
+region = Rect2(145, 48, 12, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ptake"]
+atlas = ExtResource("9_8a8k8")
+region = Rect2(145, 0, 12, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hubol"]
+atlas = ExtResource("9_8a8k8")
+region = Rect2(0, 240, 140, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8vx4p"]
+atlas = ExtResource("9_8a8k8")
+region = Rect2(0, 192, 140, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tdapf"]
+atlas = ExtResource("9_8a8k8")
+region = Rect2(0, 144, 140, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_v41fp"]
+atlas = ExtResource("9_8a8k8")
+region = Rect2(0, 96, 140, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7shrw"]
+atlas = ExtResource("9_8a8k8")
+region = Rect2(0, 48, 140, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_viowm"]
+atlas = ExtResource("9_8a8k8")
+region = Rect2(0, 0, 140, 48)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_fk26o"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": null
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7la6k")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2nypq")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bky6r")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_l4mxc")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5faoh")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ptake")
+}],
+"loop": 1,
+"name": &"MenuSelection_Droplet",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": null
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hubol")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8vx4p")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tdapf")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_v41fp")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7shrw")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_viowm")
+}],
+"loop": 1,
+"name": &"MenuSelection_Main",
+"speed": 5.0
+}]
 
 [node name="MainMenu" type="Node2D" unique_id=655593099]
 
@@ -41,6 +145,7 @@ scale = Vector2(0.10321102, 0.103211045)
 texture = ExtResource("2_ow34m")
 
 [node name="Label" type="Label" parent="." unique_id=433654076]
+z_index = 3
 offset_left = 1809.0
 offset_top = 1036.0
 offset_right = 1904.0
@@ -74,3 +179,17 @@ texture = ExtResource("7_7la6k")
 z_index = 2
 position = Vector2(962, 508)
 texture = ExtResource("8_mipys")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1776475978]
+z_index = 3
+position = Vector2(909, 448)
+sprite_frames = SubResource("SpriteFrames_fk26o")
+animation = &"MenuSelection_Main"
+frame = 6
+
+[node name="AnimatedSprite2D2" type="AnimatedSprite2D" parent="." unique_id=811496413]
+z_index = 3
+position = Vector2(1001, 448)
+sprite_frames = SubResource("SpriteFrames_fk26o")
+animation = &"MenuSelection_Droplet"
+frame = 5
