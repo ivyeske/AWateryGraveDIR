@@ -6,7 +6,9 @@
 [ext_resource type="Texture2D" uid="uid://dayv6jbyaj1vl" path="res://env/MainMenu/MainMenu_BG.png" id="4_ucygd"]
 [ext_resource type="Texture2D" uid="uid://ceevfu3ngx1ut" path="res://env/MainMenu/MainMenu_SP1.png" id="5_mipys"]
 [ext_resource type="Texture2D" uid="uid://qsy354fyn5at" path="res://env/MainMenu/MainMenu_SP2.png" id="6_8a8k8"]
+[ext_resource type="Texture2D" uid="uid://dplek77vepiyl" path="res://env/MainMenu/MainMenu_SP2_NoS.png" id="7_2nypq"]
 [ext_resource type="Texture2D" uid="uid://boagepd3tbvjw" path="res://env/MainMenu/MainMenu_LightRay.png" id="7_7la6k"]
+[ext_resource type="Texture2D" uid="uid://d1qgtip70g4aq" path="res://env/MainMenu/MainMenu_SP2_S.png" id="8_bky6r"]
 [ext_resource type="Texture2D" uid="uid://qrjfk2kdpkvh" path="res://env/MainMenu/MainMenu_TextDropShadow.png" id="8_mipys"]
 [ext_resource type="Texture2D" uid="uid://bb43msdkmh1cc" path="res://ui/Menu_Selection.png" id="9_8a8k8"]
 
@@ -165,6 +167,16 @@ z_index = 2
 position = Vector2(1414, 790)
 texture = ExtResource("6_8a8k8")
 
+[node name="MainMenuSp3" type="Sprite2D" parent="." unique_id=1762847751]
+z_index = 2
+position = Vector2(1414, 790)
+texture = ExtResource("7_2nypq")
+
+[node name="MainMenuSp4" type="Sprite2D" parent="." unique_id=748117980]
+z_index = 1
+position = Vector2(1414, 790)
+texture = ExtResource("8_bky6r")
+
 [node name="MainMenuTextDropShadow" type="Sprite2D" parent="." unique_id=1419110569]
 z_index = 2
 position = Vector2(962, 540)
@@ -187,13 +199,15 @@ frame = 5
 [node name="MainMenuLightRay2" type="Sprite2D" parent="." unique_id=1198917418]
 modulate = Color(0.3515629, 0.3515629, 0.35156286, 1)
 material = SubResource("CanvasItemMaterial_fk26o")
-position = Vector2(1365, 536)
+position = Vector2(1339.9114, 548.7437)
+rotation = -0.1501088
+scale = Vector2(1.1581808, 1.2145456)
 texture = ExtResource("7_7la6k")
 
 [node name="MainMenuLightRay3" type="Sprite2D" parent="." unique_id=2094949198]
 modulate = Color(0.3515629, 0.3515629, 0.35156286, 1)
 material = SubResource("CanvasItemMaterial_fk26o")
-position = Vector2(1694.0001, 324.99994)
-rotation = -0.500644
-scale = Vector2(1.1345199, 1.2624902)
+position = Vector2(1718.1141, 304.74127)
+rotation = -0.6050215
+scale = Vector2(1.1131408, 1.4070089)
 texture = ExtResource("7_7la6k")
