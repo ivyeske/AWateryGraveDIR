@@ -10,15 +10,9 @@
 [ext_resource type="Texture2D" uid="uid://qrjfk2kdpkvh" path="res://env/MainMenu/MainMenu_TextDropShadow.png" id="8_mipys"]
 [ext_resource type="Texture2D" uid="uid://bb43msdkmh1cc" path="res://ui/Menu_Selection.png" id="9_8a8k8"]
 
-[sub_resource type="Theme" id="Theme_fk26o"]
-default_font = ExtResource("3_2wh52")
-default_font_size = 0
-
 [sub_resource type="LabelSettings" id="LabelSettings_5doc4"]
 font = ExtResource("3_2wh52")
 font_size = 26
-
-[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_bbhbs"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_7la6k"]
 atlas = ExtResource("9_8a8k8")
@@ -123,6 +117,9 @@ animations = [{
 "speed": 5.0
 }]
 
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_fk26o"]
+blend_mode = 1
+
 [node name="MainMenu" type="Node2D" unique_id=655593099]
 
 [node name="AspectRatioContainer" type="AspectRatioContainer" parent="." unique_id=4585646]
@@ -150,7 +147,6 @@ offset_left = 1809.0
 offset_top = 1036.0
 offset_right = 1904.0
 offset_bottom = 1069.0
-theme = SubResource("Theme_fk26o")
 text = "Ver. 0.0.0"
 label_settings = SubResource("LabelSettings_5doc4")
 
@@ -164,20 +160,14 @@ position = Vector2(456, 661)
 texture = ExtResource("5_mipys")
 
 [node name="MainMenuSp2" type="Sprite2D" parent="." unique_id=1996122568]
+visible = false
 z_index = 2
 position = Vector2(1414, 790)
 texture = ExtResource("6_8a8k8")
 
-[node name="MainMenuLightRay" type="Sprite2D" parent="." unique_id=402477584]
-visible = false
-z_index = 1
-material = SubResource("CanvasItemMaterial_bbhbs")
-position = Vector2(1386, 541)
-texture = ExtResource("7_7la6k")
-
 [node name="MainMenuTextDropShadow" type="Sprite2D" parent="." unique_id=1419110569]
 z_index = 2
-position = Vector2(962, 508)
+position = Vector2(962, 540)
 texture = ExtResource("8_mipys")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1776475978]
@@ -193,3 +183,17 @@ position = Vector2(1001, 448)
 sprite_frames = SubResource("SpriteFrames_fk26o")
 animation = &"MenuSelection_Droplet"
 frame = 5
+
+[node name="MainMenuLightRay2" type="Sprite2D" parent="." unique_id=1198917418]
+modulate = Color(0.3515629, 0.3515629, 0.35156286, 1)
+material = SubResource("CanvasItemMaterial_fk26o")
+position = Vector2(1365, 536)
+texture = ExtResource("7_7la6k")
+
+[node name="MainMenuLightRay3" type="Sprite2D" parent="." unique_id=2094949198]
+modulate = Color(0.3515629, 0.3515629, 0.35156286, 1)
+material = SubResource("CanvasItemMaterial_fk26o")
+position = Vector2(1694.0001, 324.99994)
+rotation = -0.500644
+scale = Vector2(1.1345199, 1.2624902)
+texture = ExtResource("7_7la6k")
