@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://qrjfk2kdpkvh"
-path="res://.godot/imported/MainMenu_TextDropShadow.png-bebbc6c7217968cd4786a0f3a16a6ebf.ctex"
+uid="uid://ilpjrmq7vasg"
+path="res://.godot/imported/AWGLogoDropshadow.png-4c0fc8ba629b70cd10733f819cd2ba66.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://env/MainMenu/MainMenu_TextDropShadow.png"
-dest_files=["res://.godot/imported/MainMenu_TextDropShadow.png-bebbc6c7217968cd4786a0f3a16a6ebf.ctex"]
+source_file="res://env/MainMenu/AWGLogoDropshadow.png"
+dest_files=["res://.godot/imported/AWGLogoDropshadow.png-4c0fc8ba629b70cd10733f819cd2ba66.ctex"]
 
 [params]
 
