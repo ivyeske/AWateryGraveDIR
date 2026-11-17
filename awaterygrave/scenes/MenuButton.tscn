@@ -1,0 +1,65 @@
+[gd_scene format=3 uid="uid://dq25ybncxdjor"]
+
+[ext_resource type="FontFile" uid="uid://dhuqcw3stv77f" path="res://ui/superior-title-light.otf" id="1_xsssc"]
+[ext_resource type="Script" uid="uid://dljx1tr0mayv0" path="res://scripts/MenuButton.cs" id="2_pvd3f"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_gx6vf"]
+load_path = "res://.godot/imported/Menu_Selection.png-cd95dc29a94e4bd5ea8f8a96b31d1beb.ctex"
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cbqq0"]
+atlas = SubResource("CompressedTexture2D_gx6vf")
+region = Rect2(0, 0, 144, 48)
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_pvd3f"]
+load_path = "res://.godot/imported/Menu_Selection.png-cd95dc29a94e4bd5ea8f8a96b31d1beb.ctex"
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_sd4kj"]
+atlas = SubResource("CompressedTexture2D_pvd3f")
+region = Rect2(144, 0, 13, 48)
+
+[node name="MenuButton" type="Button" unique_id=2001027547]
+offset_left = 47.0
+offset_right = 237.0
+offset_bottom = 88.0
+size_flags_horizontal = 0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_focus_color = Color(1, 1, 1, 1)
+theme_override_colors/font_pressed_color = Color(1, 1, 1, 1)
+theme_override_colors/font_hover_color = Color(1, 1, 1, 1)
+theme_override_colors/font_hover_pressed_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("1_xsssc")
+theme_override_font_sizes/font_size = 64
+text = "Button"
+flat = true
+script = ExtResource("2_pvd3f")
+
+[node name="Left" type="TextureRect" parent="." unique_id=1285725366]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = -50.0
+offset_top = -48.0
+offset_right = 94.0
+grow_vertical = 0
+texture = SubResource("AtlasTexture_cbqq0")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Right" type="TextureRect" parent="." unique_id=25567197]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -13.0
+offset_top = -48.0
+grow_horizontal = 0
+grow_vertical = 0
+texture = SubResource("AtlasTexture_sd4kj")
+expand_mode = 1
+stretch_mode = 5
+
+[connection signal="mouse_entered" from="." to="." method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="." to="." method="_on_mouse_exited"]

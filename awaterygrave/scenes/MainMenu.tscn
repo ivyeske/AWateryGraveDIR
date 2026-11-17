@@ -3,124 +3,15 @@
 [ext_resource type="Texture2D" uid="uid://b6rd48eapoqm2" path="res://ui/AWGLogo.png" id="1_2wh52"]
 [ext_resource type="Texture2D" uid="uid://bcgmbgj0vmli7" path="res://ui/WitchingHourLogo.png" id="2_ow34m"]
 [ext_resource type="FontFile" uid="uid://dhuqcw3stv77f" path="res://ui/superior-title-light.otf" id="3_2wh52"]
+[ext_resource type="Script" uid="uid://b2tm7jcxv6nbg" path="res://scripts/VersionChanger.cs" id="4_bky6r"]
 [ext_resource type="Texture2D" uid="uid://dayv6jbyaj1vl" path="res://env/MainMenu/MainMenu_BG.png" id="4_ucygd"]
 [ext_resource type="Texture2D" uid="uid://ceevfu3ngx1ut" path="res://env/MainMenu/MainMenu_SP1.png" id="5_mipys"]
-[ext_resource type="Texture2D" uid="uid://qsy354fyn5at" path="res://env/MainMenu/MainMenu_SP2.png" id="6_8a8k8"]
 [ext_resource type="Texture2D" uid="uid://dplek77vepiyl" path="res://env/MainMenu/MainMenu_SP2_NoS.png" id="7_2nypq"]
 [ext_resource type="Texture2D" uid="uid://boagepd3tbvjw" path="res://env/MainMenu/MainMenu_LightRay.png" id="7_7la6k"]
+[ext_resource type="Shader" uid="uid://dojjfavxou21c" path="res://shaders/2dOverlay.gdshader" id="7_l4mxc"]
 [ext_resource type="Texture2D" uid="uid://d1qgtip70g4aq" path="res://env/MainMenu/MainMenu_SP2_S.png" id="8_bky6r"]
-[ext_resource type="Texture2D" uid="uid://bb43msdkmh1cc" path="res://ui/Menu_Selection.png" id="9_8a8k8"]
 [ext_resource type="Texture2D" uid="uid://ilpjrmq7vasg" path="res://env/MainMenu/AWGLogoDropshadow.png" id="11_2nypq"]
-
-[sub_resource type="LabelSettings" id="LabelSettings_5doc4"]
-font = ExtResource("3_2wh52")
-font_size = 26
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_7la6k"]
-atlas = ExtResource("9_8a8k8")
-region = Rect2(145, 240, 12, 48)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_2nypq"]
-atlas = ExtResource("9_8a8k8")
-region = Rect2(145, 192, 12, 48)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_bky6r"]
-atlas = ExtResource("9_8a8k8")
-region = Rect2(145, 144, 12, 48)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_l4mxc"]
-atlas = ExtResource("9_8a8k8")
-region = Rect2(145, 96, 12, 48)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_5faoh"]
-atlas = ExtResource("9_8a8k8")
-region = Rect2(145, 48, 12, 48)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_ptake"]
-atlas = ExtResource("9_8a8k8")
-region = Rect2(145, 0, 12, 48)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_hubol"]
-atlas = ExtResource("9_8a8k8")
-region = Rect2(0, 240, 140, 48)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_8vx4p"]
-atlas = ExtResource("9_8a8k8")
-region = Rect2(0, 192, 140, 48)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_tdapf"]
-atlas = ExtResource("9_8a8k8")
-region = Rect2(0, 144, 140, 48)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_v41fp"]
-atlas = ExtResource("9_8a8k8")
-region = Rect2(0, 96, 140, 48)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_7shrw"]
-atlas = ExtResource("9_8a8k8")
-region = Rect2(0, 48, 140, 48)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_viowm"]
-atlas = ExtResource("9_8a8k8")
-region = Rect2(0, 0, 140, 48)
-
-[sub_resource type="SpriteFrames" id="SpriteFrames_fk26o"]
-animations = [{
-"frames": [{
-"duration": 1.0,
-"texture": null
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_7la6k")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_2nypq")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_bky6r")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_l4mxc")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_5faoh")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_ptake")
-}],
-"loop": 1,
-"name": &"MenuSelection_Droplet",
-"speed": 7.0
-}, {
-"frames": [{
-"duration": 1.0,
-"texture": null
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_hubol")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_8vx4p")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_tdapf")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_v41fp")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_7shrw")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_viowm")
-}],
-"loop": 1,
-"name": &"MenuSelection_Main",
-"speed": 7.0
-}]
-
-[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_fk26o"]
-blend_mode = 1
+[ext_resource type="PackedScene" uid="uid://dq25ybncxdjor" path="res://scenes/MenuButton.tscn" id="11_l4mxc"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_1n6yq"]
 atlas = ExtResource("8_bky6r")
@@ -191,14 +82,19 @@ animations = [{
 "speed": 5.0
 }]
 
-[node name="MainMenu" type="Node2D" unique_id=655593099]
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_l4mxc"]
+shader = ExtResource("7_l4mxc")
+shader_parameter/blend_amount = 1.0
 
-[node name="AspectRatioContainer" type="AspectRatioContainer" parent="." unique_id=4585646]
-offset_left = 3.0
-offset_right = 43.0
-offset_bottom = 40.0
-alignment_horizontal = 0
-alignment_vertical = 0
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_5faoh"]
+shader = ExtResource("7_l4mxc")
+shader_parameter/blend_amount = 1.0
+
+[sub_resource type="LabelSettings" id="LabelSettings_5doc4"]
+font = ExtResource("3_2wh52")
+font_size = 26
+
+[node name="MainMenu" type="Node2D" unique_id=655593099]
 
 [node name="AwgLogoMockup" type="Sprite2D" parent="." unique_id=2145190630]
 z_index = 3
@@ -212,15 +108,6 @@ position = Vector2(160.46509, 959.99994)
 scale = Vector2(0.10321102, 0.103211045)
 texture = ExtResource("2_ow34m")
 
-[node name="Label" type="Label" parent="." unique_id=433654076]
-z_index = 3
-offset_left = 1809.0
-offset_top = 1036.0
-offset_right = 1904.0
-offset_bottom = 1069.0
-text = "Ver. 0.0.0"
-label_settings = SubResource("LabelSettings_5doc4")
-
 [node name="MainMenuBg" type="Sprite2D" parent="." unique_id=1684688167]
 position = Vector2(960, 540)
 texture = ExtResource("4_ucygd")
@@ -230,47 +117,10 @@ z_index = 2
 position = Vector2(456, 661)
 texture = ExtResource("5_mipys")
 
-[node name="MainMenuSp2" type="Sprite2D" parent="." unique_id=1996122568]
-visible = false
-z_index = 2
-position = Vector2(1414, 790)
-texture = ExtResource("6_8a8k8")
-
 [node name="MainMenuSp3" type="Sprite2D" parent="." unique_id=1762847751]
 z_index = 2
 position = Vector2(1414, 790)
 texture = ExtResource("7_2nypq")
-
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1776475978]
-z_index = 3
-position = Vector2(909, 448)
-sprite_frames = SubResource("SpriteFrames_fk26o")
-animation = &"MenuSelection_Main"
-frame = 4
-frame_progress = 0.031503305
-
-[node name="AnimatedSprite2D2" type="AnimatedSprite2D" parent="." unique_id=811496413]
-z_index = 3
-position = Vector2(1001, 448)
-sprite_frames = SubResource("SpriteFrames_fk26o")
-animation = &"MenuSelection_Droplet"
-frame = 5
-
-[node name="MainMenuLightRay2" type="Sprite2D" parent="." unique_id=1198917418]
-modulate = Color(1, 1, 1, 0.26666668)
-material = SubResource("CanvasItemMaterial_fk26o")
-position = Vector2(1307.4965, 458.1665)
-rotation = -0.24751917
-scale = Vector2(1.1581808, 1.2145456)
-texture = ExtResource("7_7la6k")
-
-[node name="MainMenuLightRay3" type="Sprite2D" parent="." unique_id=2094949198]
-modulate = Color(1, 1, 1, 0.27450982)
-material = SubResource("CanvasItemMaterial_fk26o")
-position = Vector2(1685.6992, 214.16406)
-rotation = -0.7024318
-scale = Vector2(1.1131408, 1.4070089)
-texture = ExtResource("7_7la6k")
 
 [node name="Scarf" type="AnimatedSprite2D" parent="." unique_id=836881319]
 z_index = 1
@@ -284,3 +134,90 @@ frame_progress = 0.21801686
 [node name="AwgLogoDropshadow" type="Sprite2D" parent="." unique_id=2100235742]
 position = Vector2(960, 176)
 texture = ExtResource("11_2nypq")
+
+[node name="MainMenuLightRay2" type="Sprite2D" parent="." unique_id=1198917418]
+modulate = Color(1, 1, 1, 0.5882353)
+material = SubResource("ShaderMaterial_l4mxc")
+position = Vector2(1307.4965, 458.1665)
+rotation = -0.24751915
+scale = Vector2(1.1581808, 1.2145456)
+texture = ExtResource("7_7la6k")
+
+[node name="BackBufferCopy" type="BackBufferCopy" parent="." unique_id=1916967483]
+position = Vector2(1067, 226.5)
+scale = Vector2(3.6000009, 3.5650003)
+copy_mode = 2
+
+[node name="MainMenuLightRay3" type="Sprite2D" parent="." unique_id=2094949198]
+modulate = Color(1, 1, 1, 0.5882353)
+material = SubResource("ShaderMaterial_5faoh")
+position = Vector2(1685.6992, 214.16406)
+rotation = -0.7024318
+scale = Vector2(1.1131408, 1.4070089)
+texture = ExtResource("7_7la6k")
+
+[node name="MarginContainer" type="MarginContainer" parent="." unique_id=689794370]
+offset_right = 1920.0
+offset_bottom = 1080.0
+theme_override_constants/margin_right = 5
+theme_override_constants/margin_bottom = 5
+
+[node name="Label" type="Label" parent="MarginContainer" unique_id=433654076]
+z_index = 12
+layout_mode = 2
+size_flags_horizontal = 8
+size_flags_vertical = 8
+text = "Ver. 0.0.0"
+label_settings = SubResource("LabelSettings_5doc4")
+horizontal_alignment = 2
+script = ExtResource("4_bky6r")
+metadata/_edit_use_anchors_ = true
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=679233385]
+offset_top = 380.0
+offset_right = 1920.0
+offset_bottom = 1080.0
+size_flags_horizontal = 4
+offset_transform_position = Vector2(500, 0)
+theme_override_constants/separation = 16
+
+[node name="Play" type="CenterContainer" parent="VBoxContainer" unique_id=929229311]
+layout_mode = 2
+
+[node name="MenuButton" parent="VBoxContainer/Play" unique_id=2001027547 instance=ExtResource("11_l4mxc")]
+layout_mode = 2
+text = "Play"
+AnimationTime = 0.3
+
+[node name="Options" type="CenterContainer" parent="VBoxContainer" unique_id=559412134]
+layout_mode = 2
+
+[node name="MenuButton" parent="VBoxContainer/Options" unique_id=28932882 instance=ExtResource("11_l4mxc")]
+layout_mode = 2
+text = "Options"
+AnimationTime = 0.3
+YOffset = 10.0
+
+[node name="Extras" type="CenterContainer" parent="VBoxContainer" unique_id=2062719848]
+layout_mode = 2
+
+[node name="MenuButton" parent="VBoxContainer/Extras" unique_id=1208689048 instance=ExtResource("11_l4mxc")]
+layout_mode = 2
+text = "Extras"
+AnimationTime = 0.3
+
+[node name="Credits" type="CenterContainer" parent="VBoxContainer" unique_id=1203188788]
+layout_mode = 2
+
+[node name="MenuButton" parent="VBoxContainer/Credits" unique_id=1125406835 instance=ExtResource("11_l4mxc")]
+layout_mode = 2
+text = "Credits"
+AnimationTime = 0.3
+
+[node name="Exit" type="CenterContainer" parent="VBoxContainer" unique_id=1291895931]
+layout_mode = 2
+
+[node name="MenuButton" parent="VBoxContainer/Exit" unique_id=1939313773 instance=ExtResource("11_l4mxc")]
+layout_mode = 2
+text = "Exit"
+AnimationTime = 0.3
